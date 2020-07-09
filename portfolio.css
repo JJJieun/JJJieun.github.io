@@ -1,0 +1,165 @@
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  font-family:"맑은 고딕", "돋움", sans-serif;
+  font-size:12px;
+  background-image:url("img/back3.jpg");
+
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration:none;
+  color:#444444;
+}
+.clear {
+  clear:both;
+}
+/*메인 메뉴 */
+header #main_menu ul {
+  margin:0 auto;
+  float:left;
+  width:800px;
+  /*border:solid 1px #ff0000;*/
+  padding-top:12px;
+  text-align:left;
+}
+header #main_menu li {
+  display:inline;
+  margin:0 57px;
+  font-size:16px;
+  font-style:bold;
+}
+header #main_menu a:link {
+  color:#D941C5;
+}
+header #main_menu a:visited {
+  color:#5D5D5D;
+}
+header #main_menu a:hover {
+  color:#ffffff;
+}
+header #main_menu a:active {
+  color:#ffffff;
+}
+/*버튼*/
+#button {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  display:flex;
+  margin-top: 70px;
+  padding: 0;
+}
+#button li {
+  list-style:none;
+  margin:0 5px;
+}
+#button li a .fa {
+  font-size:20px;
+  color:#333;
+  line-height:80px;
+  transition:0.5s;
+  padding-right:16px;
+}
+#button li a span {
+  padding:0;
+  margin:0;
+  position:absolute;
+  top:30px;
+  color:#333;
+  letter-spacing:4px;
+  transition:0.5s;
+}
+#button li a {
+  text-decoration:none;
+  display:absolute;
+  display:block;
+  width:180px;
+  height:80px;
+  background:#fff;
+  text-align:left;
+  padding-left:40px;
+  transform:rotate(-30deg) skewX(25deg) translate(0,0);
+  transition:0.5s;
+  box-shadow:-20px 20px 10px rgba(0,0,0,0.5);
+}
+#button li a:before {
+  content:'';
+  position:absolute;
+  top:10px;
+  left:-20px;
+  height:100%;
+  width:20px;
+  background:#b1b1b1;
+  transform:0.5s;
+  transform:rotate(0deg) skewY(-45deg);
+}
+#button li a:after {
+  content:'';
+  position:absolute;
+  bottom:-20px;
+  left:-10px;
+  height:20px;
+  width:100%;
+  background:#b1b1b1;
+  transform:0.5s;
+  transform:rotate(0deg) skewX(-45deg);
+}
+#button li a:hover {
+  transform:rotate(-30deg) skew(25deg) translate(20px,-15px);
+  box-shadow:-50px 50px 50px rgba(0,0,0,0.5);
+}
+#button li:hover .fa {
+  color:#fff;
+}
+#button li:hover span {
+  color:#fff;
+}
+#button li:hover a {
+  background:#ad95e7;
+}
+#button li:hover a:before {
+  background:#6d6096;
+}
+#button li:hover a:after{
+  background:#8e7fbf;
+}
+/*사이드메뉴*/
+h2 {
+  text-align:center;
+  margin-top: 70px;
+
+  position:relative;
+  font-family:"Arial";
+  color:#8b499b;
+  font-size:20px;
+}
+/*저작권*/
+footer {
+  border-top: 1px solid #ad95e7;
+  margin-top: 200px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  clear:both;
+  height:20px;
+  padding:0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ad95e7;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+footer span {
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 14px;
+}

@@ -1,0 +1,140 @@
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  font-family:"맑은 고딕", "돋움";
+  font-size:12px;
+  background-image:url("img/back2.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration:none;
+  color:#444444;
+}
+.clear {
+  clear:both;
+}
+/*메인 메뉴 */
+header #main_menu ul {
+  margin:0 auto;
+  float:left;
+  width:800px;
+  /*border:solid 1px #ff0000;*/
+  padding-top:12px;
+  text-align:left;
+}
+header #main_menu li {
+  display:inline;
+  margin:0 57px;
+  font-size:16px;
+  font-style:bold;
+}
+header #main_menu a:link {
+  color:#D941C5;
+}
+header #main_menu a:visited {
+  color:#5D5D5D;
+}
+header #main_menu a:hover {
+  color:#ffffff;
+}
+header #main_menu a:active {
+  color:#ffffff;
+}
+  /*슬라이더*/
+.container {
+    margin:0 auto;
+    margin-top:140px;
+    position:relative;
+    width:50%;
+    height:0;
+    padding-bottom:30%;
+    background:#4c4c4c;
+    border:solid 10px #ad95e7;
+  }
+  .slide_img{
+    position:absolute;
+    width:100%;
+    height:100%;
+  }
+  .slide_img img{
+    width:100%;
+    height:100%;
+  }
+  #i1, #i2, #i3{
+    display:none;
+  }
+  .pre, .nxt {
+    width:12%;
+    height:100%;
+    position:absolute;
+    top:0;
+    background:rgba(88,88,88,.4);
+    z-index:99;
+    cursor:pointer;
+  }
+  .pre {
+    left:0;
+  }
+  .nxt {
+    right:0;
+  }
+  .nav {
+    width:100%;
+    height:11px;
+    bottom:12%;
+    position:absolute;
+    text-align:center;
+    z-index:99;
+  }
+  .dots {
+    top:-5px;
+    width:18px;
+    height:18px;
+    margin:0 4px;
+    position:relative;
+    border-radius:50%;
+    display:inline-block;
+    background:rgba(0,0,0,.4);
+  }
+  .slide_img {
+    z-index:-1;
+  }
+  #i1:checked ~ #one,
+  #i2:checked ~ #two,
+  #i3:checked ~ #three{
+    z-index:9;
+  }
+  #i1:checked ~ .nav #dot1,
+  #i2:checked ~ .nav #dot2,
+  #i3:checked ~ .nav #dot3{
+    background:#ad95e7;
+  }
+
+
+    /*저작권*/
+    footer {
+      border-top: 1px solid #ad95e7;
+      margin-top: 200px;
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      clear:both;
+      height:20px;
+      padding:0;
+    }
+
+    footer p {
+        font-size: 14px;
+        color: #ad95e7;
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    footer span {
+        font-size: 12px;
+        font-weight: normal;
+        margin-left: 14px;
+    }
